@@ -1,0 +1,1408 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1427px;
+  margin-inline: auto;
+  width: 100%;
+}
+.scrolled__content {
+  scroll-margin: 40px;
+}
+header {
+  background: #111111;
+  padding-block: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1427px;
+  margin-inline: auto;
+}
+header nav ul {
+  display: flex;
+  margin-inline: auto 60px;
+}
+header nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding-inline: 20px;
+}
+header nav a.call__btn {
+  background: #f38d00;
+  color: #fff;
+  width: 260px;
+  height: 50px;
+  border-radius: 6px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.mobile__nav {
+  display: none;
+}
+/* banner section starts */
+.banner__section {
+  background: url("/assets/images/banner-bg.png");
+  background-size: cover;
+  padding-block: 135px;
+}
+.banner__section h1 {
+  max-width: 681px;
+  font-size: 34px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.banner__section h1 span {
+  font-size: 55px;
+  color: #f38d00;
+}
+.banner__section ul {
+  margin-bottom: 60px;
+}
+.banner__section ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.banner__section ul li svg {
+  width: 16px;
+  height: 16px;
+}
+.call__now__para {
+  font-size: 34px;
+  color: #000;
+}
+.call__now__para span {
+  color: #f38d00;
+  font-weight: 600;
+}
+/* banner section ends */
+
+/* top form row starts */
+.top__form__row {
+  background: #f38d00;
+  padding-block: 50px;
+}
+.top__form__row .flex__row {
+  display: flex;
+  column-gap: 120px;
+}
+.top__form__row .flex__row .content {
+  min-width: max-content;
+}
+.top__form__row .flex__row .content .save {
+  font-size: 28px;
+  line-height: 50px;
+  color: #000;
+  font-weight: 600;
+}
+.top__form__row .flex__row .content h2 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.top__form__row .flex__row .content .book {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 600;
+}
+.top__form__row .flex__row .form__block {
+  width: 100%;
+}
+.top__form__row .form__block .grid__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.top__form__row .form__block .grid__row input,
+.top__form__row .form__block .grid__row textarea {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding-inline: 20px;
+  height: 50px;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Inter";
+  color: #333333;
+}
+.top__form__row .form__block .grid__row textarea {
+  height: 115px;
+  padding-block: 20px;
+}
+.top__form__row .form__block .grid__row button {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
+/* top form row ends */
+
+/* services section starts */
+.services__section {
+  padding-block: 80px;
+}
+.services__section h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.services__section .service__bullets__row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-block: 60px;
+}
+.services__section .service__bullet {
+  background: #f2f2f2;
+  padding: 15px 25px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.services__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  row-gap: 60px;
+}
+.services__row .service__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__row .service__block .image {
+  margin-bottom: 30px;
+}
+.services__row .service__block .image img {
+  width: 100%;
+}
+.services__row .service__block h3 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.services__row .service__block p {
+  font-size: 18px;
+  color: #555555;
+  text-align: center;
+  line-height: 1.4;
+}
+/* services section ends */
+
+/* background with color section starts */
+.bg__with__color__section {
+  background: #f2f2f2;
+  padding-block: 80px;
+}
+.bg__with__color__section h3 {
+  font-size: 40px;
+  color: #000;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.bg__with__color__section h3 span {
+  color: #f38d00;
+}
+.bg__with__color__section .image:last-child {
+  margin-top: 30px;
+}
+.bg__with__color__section img {
+  width: 100%;
+}
+.logos__block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.bg__with__color__section svg {
+  height: 20px;
+  width: 20px;
+}
+.bg__with__color__section .owl-theme .owl-nav {
+  margin-top: 20px;
+}
+/* background with color section ends */
+
+/* quote section starts */
+.quote__section {
+  background: url("/assets/images/quote-bg.png");
+  padding-block: 60px;
+  text-align: center;
+}
+.quote__section h3 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.quote__section p {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  max-width: 840px;
+  margin-inline: auto;
+  line-height: 38px;
+}
+.quote__section a {
+  background: #f38d00;
+  color: #fff;
+  border-radius: 6px;
+  width: 208px;
+  height: 49px;
+  display: block;
+  line-height: 49px;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* quote section ends */
+
+/* why us section starts */
+.why__us__section .grid__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.why__us__section .content__row {
+  padding-block: 80px;
+}
+.why__us__section .content__row img {
+  width: 100%;
+}
+.why__us__section .content h3 {
+  font-size: 40px;
+  line-height: 55px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.why__us__section .content p {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.why__us__icons__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.why__us__icons__row .icon__block {
+  display: grid;
+  grid-template-columns: 130px calc(100% - 130px);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.why__us__icons__row .icon__block .image {
+  background: #f38d00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why__us__icons__row .icon__block .content {
+  padding: 25px;
+  background: #f2f2f2;
+}
+.why__us__icons__row .icon__block .content h4 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.why__us__icons__row .icon__block .content p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 0;
+}
+/* why us section ends */
+
+/* see in action section starts */
+.see__in__action__section {
+  padding-block: 80px 10px;
+}
+.see__in__action__section .heading__block {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.see__in__action__section .heading__block h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+}
+.see__in__action__section .call__now__para {
+  font-size: 40px;
+  line-height: 60px;
+  color: #f38d00;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.see__in__action__section .call__now__para svg {
+  width: 32px;
+  height: 32px;
+}
+.see__in__action__section .call__now__para svg path {
+  fill: #f38d00;
+}
+.see__in__action__section .text {
+  font-size: 20px;
+  line-height: 44px;
+  color: #000;
+}
+.see__in__action__section .see_in__action__para {
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.see__in__action__section .image__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.see__in__action__section .image__wrapper .flex__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.see__in__action__section .image__wrapper .flex__row img {
+  flex: 0 0 50%;
+  max-width: calc(50% - 2.5px);
+}
+.see__in__action__section .image__wrapper .grid__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.see__in__action__section .image__wrapper .grid__row img {
+  width: 100%;
+}
+
+/* see in action section ends */
+
+/* testimonial section starts */
+.testimonial__section {
+  background-color: #f2f2f2;
+  padding-block: 80px;
+}
+.testimonial__section h3 {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.testimonial__section .owl-carousel {
+  display: block;
+}
+.testimonial__block {
+  background: #fff;
+  padding: 45px;
+  border-radius: 6px;
+}
+.testimonial__section .testimonial__block .quote__icon {
+  width: 48px;
+  height: auto;
+}
+.testimonial__block .content {
+  margin-block: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+}
+.testimonial__block .name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.testimonial__block .rating img {
+  max-width: 108px;
+}
+.testimonial__section .book__online {
+  display: block;
+  color: #fff;
+  width: 208px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: #f38d00;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-inline: auto;
+}
+.testimonial__section .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.testimonial__section .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+}
+.testimonial__section .owl-carousel .owl-nav button:hover {
+  background-color: transparent;
+}
+.testimonial__section .owl-carousel .owl-nav button.owl-prev {
+  left: -40px;
+}
+.testimonial__section .owl-carousel .owl-nav button.owl-next {
+  right: -40px;
+}
+
+/* testimonial section ends */
+
+/* client section starts */
+.clients__section {
+  background: #f38d00;
+  padding-block: 80px;
+}
+.clients__section .pre__heading {
+  font-size: 28px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+}
+.clients__section h3 {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  line-height: 64px;
+  font-weight: 600;
+}
+.clients__section .post__heading {
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+}
+.clients__section .cta__block {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.clients__section .book__now__btn {
+  background-color: #000;
+  width: 149px;
+  height: 49px;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.clients__section p.or {
+  font-size: 24px;
+  margin-block: 30px;
+}
+.clients__section .tel__num {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.clients__section .tel__num svg {
+  width: 32px;
+  height: 32px;
+}
+/* client section ends */
+
+/* faq section starts */
+.faq__section {
+  padding-block: 80px;
+}
+.faq__section h3 {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.faq_container {
+  border-radius: 6px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.faq_question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+.answer {
+  padding: 0 30px 30px;
+  line-height: 1.5rem;
+  color: #555555;
+  font-size: 18px;
+  line-height: 28px;
+}
+.fqa_headline_container h2 span {
+  font-weight: 700;
+}
+.faq_question .faq_question-text h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.icon.active {
+  background: transparent;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.icon-shape {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.icon .icon-shape::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 3px;
+  background: #f38d00;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.icon .icon-shape::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 20px;
+  background: #f38d00;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.icon .icon-shape.active::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+  transition: all 0.5s ease;
+}
+.icon .icon-shape.active::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: all 0.5s ease;
+}
+/* faq section ends */
+
+/* contact section starts */
+.contact__section {
+  padding-block: 80px;
+  background-color: #f5f5f5;
+}
+.contact__section h3 {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.contact__section .grid__row {
+  display: grid;
+  grid-template-columns: 330px calc(100% - 330px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.contact__section .grid__row .content__left {
+  background: #111111;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__section .grid__row .content__left img {
+  margin-bottom: 30px;
+}
+.contact__section .grid__row .content__left .location,
+.contact__section .grid__row .content__left .phone {
+  display: flex;
+  align-items: start;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+.contact__section .grid__row .content__left .phone svg {
+  height: 13px;
+  margin-top: 4px;
+}
+.contact__section .grid__row .content__right {
+  padding: 50px;
+  background-color: #ffffff;
+}
+.contact__section .grid__row .content__right ul {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+.contact__section .grid__row .content__right ul li {
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact__section h4 {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-block: 80px;
+}
+.contact__section h4 span {
+  color: #f38d00;
+}
+.contact__section .contact__form .grid__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+.contact__section .contact__form input {
+  background: #ffffff;
+  border-radius: 6px;
+  height: 50px;
+  padding-inline: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+.contact__section .button__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact__section .contact__form button {
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  background-color: #f38d00;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+}
+/* contact section ends */
+
+/* footer section starts */
+footer {
+  background: #111111;
+  padding-block: 50px;
+  border-bottom: 1px solid #272727;
+}
+footer .grid__row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+footer h4 {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+footer ul li {
+  display: flex;
+  align-items: center;
+  color: #cccccc;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #cccccc;
+  font-weight: 400;
+  position: relative;
+  padding-left: 16px;
+}
+footer ul li::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: url("/assets/images/left-chevron.png");
+  background-repeat: no-repeat;
+}
+.copyrights__row {
+  background: #111111;
+  padding-block: 50px;
+}
+.copyrights__row .logo {
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.copyrights__row .flex__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.copyrights__row .flex__row p:first-child {
+  color: #999999;
+}
+.copyrights__row .flex__row .links__row {
+  display: flex;
+  gap: 24px;
+  justify-content: end;
+}
+.copyrights__row .d__flex {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  justify-content: center;
+}
+.copyrights__row .flex__row .links__row a {
+  color: #cccccc;
+}
+/* footer section ends */
+
+.cta__btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #f38d00;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1366px) {
+  header nav {
+    max-width: 1280px;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  .banner__section {
+    padding-block: 80px;
+  }
+  .services__section .service__bullet {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  .services__row .service__block p {
+    font-size: 16px;
+  }
+  .services__row .service__block .image {
+    margin-bottom: 20px;
+  }
+  .services__row .service__block h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .why__us__section .content h3 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .why__us__section .content p {
+    font-size: 18px;
+  }
+  .why__us__icons__row .icon__block .content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .see__in__action__section .heading__block {
+    margin-bottom: 50px;
+  }
+  .contact__section .grid__row .content__right {
+    padding: 30px;
+  }
+  .contact__section .grid__row .content__right ul li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .contact__section h4 {
+    margin-bottom: 50px;
+  }
+  .clients__section p.or {
+    margin-block: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container,
+  header nav {
+    padding-inline: 20px;
+  }
+  header nav a.call__btn {
+    font-size: 16px;
+    width: max-content;
+    height: 40px;
+    line-height: 40px;
+  }
+  header nav ul {
+    margin-inline: auto 30px;
+  }
+  .banner__section h1 {
+    font-size: 28px;
+  }
+  .banner__section h1 span {
+    font-size: 42px;
+  }
+  .banner__section ul {
+    margin-bottom: 30px;
+  }
+  .call__now__para {
+    font-size: 28px;
+  }
+  .banner__section ul li {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .top__form__row .flex__row .content h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .top__form__row .flex__row {
+    gap: 50px;
+  }
+  .top__form__row .flex__row .content .save {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .top__form__row .flex__row .content .book {
+    font-size: 22px;
+  }
+  .top__form__row .form__block .grid__row button {
+    font-size: 16px;
+  }
+  .services__section {
+    padding-block: 50px;
+  }
+  .services__section h2 {
+    font-size: 28px;
+  }
+  .services__section .service__bullets__row {
+    margin-block: 30px;
+  }
+  .services__section .service__bullet {
+    padding: 12px 15px;
+  }
+  .services__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+  }
+  .services__row .service__block .image {
+    width: 100%;
+  }
+  .bg__with__color__section {
+    padding-block: 50px;
+  }
+  .bg__with__color__section h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  .quote__section {
+    padding-block: 50px;
+  }
+  .quote__section h3 {
+    font-size: 32px;
+  }
+  .quote__section p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .why__us__section .content__row {
+    padding-block: 50px;
+    gap: 20px;
+  }
+  .why__us__section .content h3 {
+    font-size: 28px;
+  }
+  .why__us__icons__row {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .testimonial__section {
+    padding-block: 50px;
+  }
+  .testimonial__section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .testimonial__block .content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonial__section .book__online {
+    margin-top: 30px;
+  }
+  .testimonial__section .owl-carousel .owl-nav button {
+    background: #fff !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial__section .owl-carousel .owl-nav button svg {
+    height: 20px;
+  }
+  .testimonial__section .owl-carousel .owl-nav button.owl-prev {
+    left: -20px;
+  }
+  .testimonial__section .owl-carousel .owl-nav button.owl-next {
+    right: -20px;
+  }
+  .see__in__action__section {
+    padding-top: 50px;
+  }
+  .see__in__action__section .heading__block h3 {
+    font-size: 28px;
+  }
+  .see__in__action__section .call__now__para {
+    font-size: 32px;
+  }
+  .see__in__action__section .text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .see__in__action__section .heading__block {
+    margin-bottom: 30px;
+  }
+  .clients__section {
+    padding-block: 50px;
+  }
+  .clients__section h3 {
+    font-size: 32px;
+  }
+  .clients__section .pre__heading {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .clients__section .post__heading {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .clients__section .cta__block {
+    margin-top: 30px;
+  }
+  .clients__section .tel__num {
+    font-size: 32px;
+  }
+  .faq__section {
+    padding-block: 50px;
+  }
+  .faq__section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .faq_question .faq_question-text h3 {
+    font-size: 16px;
+  }
+  .icon .icon-shape::before {
+    width: 16px;
+  }
+  .icon .icon-shape::after {
+    height: 16px;
+  }
+  .contact__section {
+    padding-block: 50px;
+  }
+  .contact__section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .contact__section h4 {
+    font-size: 28px;
+  }
+  .contact__section .grid__row .content__left {
+    padding: 30px;
+  }
+  .contact__section .grid__row .content__right ul {
+    gap: 16px;
+  }
+  .contact__section .grid__row .content__right ul li {
+    font-size: 14px;
+    line-height: 24px;
+    align-items: start;
+  }
+  .contact__section .grid__row .content__right ul li svg {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-top: 4px;
+  }
+  footer .grid__row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+  .mobile__nav {
+    display: flex;
+    padding-inline: 20px;
+    align-items: center;
+  }
+  .mobile__nav img {
+    width: 120px;
+  }
+  .toggle__button {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    display: flex;
+  }
+  .toggle__button img {
+    width: 32px;
+  }
+  .mobile__navigation {
+    position: absolute;
+    display: none;
+    padding-top: 30px;
+    top: 0;
+    background: #111111;
+    width: 100%;
+    left: 0;
+    top: 66px;
+    height: calc(100vh - 66px);
+    padding-inline: 20px;
+  }
+  .mobile__navigation.show {
+    display: block;
+  }
+  .mobile__navigation li a {
+    color: #fff;
+    padding-bottom: 12px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  .mobile__navigation .call__btn {
+    background: #f38d00;
+    color: #fff;
+    border-radius: 6px;
+    height: 40px;
+    padding: 12px 30px;
+    padding-left: 24px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: max-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .top__form__row .flex__row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .quote__section {
+    padding-block: 30px;
+  }
+  .quote__section h3 {
+    margin-bottom: 20px;
+  }
+  .quote__section a {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 20px;
+  }
+  .why__us__section .content__row {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+  .why__us__icons__row {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+  .testimonial__block {
+    padding: 24px;
+  }
+  .testimonial__block .content {
+    margin-block: 16px;
+  }
+  .testimonial__section .testimonial__block .quote__icon {
+    width: 32px;
+  }
+  .testimonial__section .book__online {
+    height: 45px;
+    line-height: 45px;
+  }
+  .contact__section .grid__row .content__right ul {
+    grid-template-columns: 1fr;
+  }
+  .contact__section h4 {
+    margin-block: 50px 30px;
+  }
+  .contact__section .contact__form .grid__row {
+    gap: 16px;
+  }
+  .contact__section .contact__form button {
+    width: max-content;
+    padding-inline: 32px;
+    height: 45px;
+    line-height: 45px;
+  }
+  .contact__section .grid__row {
+    grid-template-columns: 1fr;
+  }
+  .contact__section .grid__row .content__left {
+    padding: 12px 30px;
+  }
+  .contact__section .grid__row .content__left img {
+    max-width: 210px;
+  }
+  .contact__section .grid__row .content__left .location,
+  .contact__section .grid__row .content__left .phone {
+    font-size: 16px;
+  }
+  .contact__section .grid__row .content__right {
+    padding: 20px;
+  }
+  .copyrights__row {
+    padding-block: 30px;
+  }
+  .copyrights__row .flex__row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .copyrights__row .flex__row p:first-child {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner__section {
+    padding-block: 40px;
+  }
+  .banner__section h1 {
+    font-size: 20px;
+  }
+  .banner__section h1 span {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  .banner__section ul li {
+    font-size: 15px;
+    align-items: start;
+  }
+  .banner__section ul li svg {
+    margin-top: 4px;
+  }
+  .call__now__para {
+    font-size: 20px;
+  }
+  .top__form__row .form__block .grid__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .top__form__row {
+    padding-block: 30px;
+  }
+  .top__form__row .flex__row .content h2 br {
+    display: none;
+  }
+  .top__form__row .flex__row .content h2 {
+    font-size: 24px;
+  }
+  .top__form__row .flex__row .content .book {
+    font-size: 20px;
+  }
+  .services__row {
+    grid-template-columns: 1fr;
+  }
+  .services__section h2 {
+    font-size: 24px;
+  }
+  .clients__section .tel__num svg {
+    width: 24px;
+    height: 24px;
+  }
+  .services__section .service__bullets__row {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .services__section .service__bullet {
+    min-width: max-content;
+  }
+  .services__row .service__block h3 {
+    text-align: center;
+  }
+  .bg__with__color__section h3 {
+    font-size: 24px;
+  }
+  .see__in__action__section .call__now__para svg {
+    height: 24px;
+    width: 24px;
+  }
+  .quote__section h3 {
+    font-size: 28px;
+  }
+  .quote__section p {
+    font-size: 16px;
+  }
+  .quote__section a {
+    font-size: 16px;
+  }
+  .why__us__section .content h3 {
+    font-size: 24px;
+  }
+  .why__us__section .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .why__us__icons__row .icon__block {
+    grid-template-columns: 1fr;
+  }
+  .why__us__icons__row .icon__block .image {
+    padding-block: 20px;
+  }
+  .why__us__icons__row .icon__block .image img {
+    width: 40px;
+  }
+  .why__us__icons__row .icon__block .content {
+    text-align: center;
+  }
+  .why__us__icons__row .icon__block .content h4 {
+    margin-bottom: 8px;
+  }
+  .testimonial__section h3 {
+    font-size: 24px;
+  }
+  .see__in__action__section .heading__block h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .see__in__action__section .call__now__para {
+    font-size: 28px;
+  }
+  .see__in__action__section .see_in__action__para {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .see__in__action__section .text {
+    text-align: center;
+  }
+  .see__in__action__section .image__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .clients__section {
+    padding-block: 30px;
+  }
+  .clients__section .pre__heading {
+    font-size: 20px;
+  }
+  .clients__section h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-block: 8px;
+  }
+  .clients__section .post__heading {
+    font-size: 16px;
+  }
+  .clients__section p.or {
+    margin-block: 10px;
+  }
+  .clients__section .tel__num {
+    font-size: 26px;
+  }
+  .faq__section h3 {
+    font-size: 24px;
+  }
+  .faq_question {
+    padding: 12px 20px;
+  }
+  .faq_question .faq_question-text h3 {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .faq_container:last-child {
+    margin-bottom: 0;
+  }
+  .icon .icon-shape::before {
+    width: 12px;
+    height: 2px;
+  }
+  .icon .icon-shape::after {
+    height: 12px;
+    width: 2px;
+  }
+  .contact__section h3 {
+    font-size: 24px;
+  }
+  .contact__section .contact__form .grid__row {
+    grid-template-columns: 1fr;
+  }
+  .contact__section .contact__form input {
+    font-size: 14px;
+    height: 45px;
+  }
+  footer .grid__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
